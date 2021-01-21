@@ -1,0 +1,91 @@
+﻿<Window x:Class="CryptojackerFinder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Name="Main"
+        Title="CryptojackerFinder" MinHeight="450" MinWidth="700" Width="990">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" MinHeight="100"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="380"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid ItemsSource="{Binding ElementName=Main, Path=Pretenders}" Margin="15" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" 
+                  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ProcessId, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="PID" />
+                <DataGridTextColumn Binding="{Binding ProcessName, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Имя процесса"/>
+                <DataGridTextColumn Binding="{Binding CpuUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="ЦП"/>
+                <DataGridTextColumn Binding="{Binding CpuStandardDeviation, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Среднеквадратичное отклонение ЦП"/>
+                <DataGridTextColumn Binding="{Binding RamUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Память"/>
+                <DataGridTextColumn Binding="{Binding NetUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Сеть"/>
+                <DataGridTextColumn Binding="{Binding CryptoApiCalls, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Доступ к CryptoAPI"/>
+            </DataGrid.Columns>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="Red"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsCryptoJacker}" Value="true">
+                            <Setter Property="Background" Value="Green"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
+        
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="30">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBox Width="50"
+                         IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
+                         Text="{Binding ElementName=Main, Path=CpuUsage, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Width="250">Порог использования CPU (%)</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBox Width="50"
+                         IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
+                         Text="{Binding ElementName=Main, Path=CpuStandardDeviation, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Width="250">Среднеквадратичное отклонение ЦП</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBox Width="50"
+                         IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
+                         Text="{Binding ElementName=Main, Path=RamUsage, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Width="250">Потребление памяти (Mb)</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBox Width="50"
+                         IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
+                         Text="{Binding ElementName=Main, Path=NetUsage, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Width="250">Скорость передачи по сети (KBytes/minute)</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBox Width="50" 
+                         IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
+                         Text="{Binding ElementName=Main, Path=CryptoApiCalls, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Width="260">Количество обращений к CryptoApi в минуту</Label>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Height="25" Margin="20">
+            <Label Content="Время анализа:"/>
+            <TextBox Width="60" Text="{Binding ElementName=Main, Path=AnalyzeTime, StringFormat={}{0:hh':'mm':'ss},
+                UpdateSourceTrigger=PropertyChanged}"
+                IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,0,0,90" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="25" Text="{Binding ElementName=Main, Path=CurrentTime, StringFormat={}{0:hh':'mm':'ss},
+                UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock FontSize="25">/</TextBlock>
+            <TextBlock FontSize="25" Text="{Binding ElementName=Main, Path=AnalyzeTime, StringFormat={}{0:hh':'mm':'ss},
+                UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <Button Grid.Row="1" Grid.Column="1" Height="50" Width="170" Content="Старт" Click="ButtonStart_OnClick"
+                Name="StartButton"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Height="50" Width="170" Content="Стоп" Click="ButtonStop_OnClick"
+                Name="StopButton" Visibility="Hidden"></Button>
+    </Grid>
+</Window>

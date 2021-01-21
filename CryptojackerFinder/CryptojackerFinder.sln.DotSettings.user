@@ -1,0 +1,86 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1da1e2e4_002D95be_002D4c79_002D9164_002D0fec3490ee47/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestPretender #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestPretender&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestNetCheck&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2480d802_002D40a4_002D4d03_002Da109_002Dc177b7c0fac8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMethod1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=25cec16f_002D82a0_002D4a3c_002Dbb17_002Dbf5571df5bca/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestPretender #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestPretender&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2c22e67b_002Dda3e_002D42d8_002Db0d2_002D2923b2aedffe/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestNetCheck #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestNetCheck&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ad3583c_002D51fb_002D4c1d_002Db366_002D9fa9568f8644/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestCPU2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestCPU2&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestCPU3&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=96feda8f_002Df475_002D4466_002D9278_002D41bfa510dba6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestCPU3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Or&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestCPU3&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestNet&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+    &lt;/Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestNewMethod&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9aec9edc_002Db795_002D4072_002Da640_002D8e55da163b40/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestNetCheck #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Or&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestNetCheck&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestDota2&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+    &lt;/Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestCPU2&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e19bdeae_002D3de6_002D406a_002D8023_002D59590b0d1a66/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestPretender" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestPretender&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestHightCpuUsage&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eac719b8_002Db983_002D431b_002D80d8_002Da000f07a3118/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestNetCheck" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestNetCheck&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa867888_002De6d6_002D4436_002Da889_002D32f9edd6c458/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestHightCpuUsage" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::3EAAEE2D-028B-4F22-A594-447D663C1E39::.NETFramework,Version=v4.7.2::CryptojakcerFinderTests.UnitTest1.TestHightCpuUsage&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
