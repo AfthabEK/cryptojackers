@@ -1,5 +1,7 @@
 # cryptojackerdetect
 
-Для перехвата обращения процесса к криптобиблиотекам необходимо добавить библиотеку loadlibraryhook в AppInit_DLLs. Подробнее об этом написано в loadlibraryhook\ReadMe.txt
+To intercept a process's access to crypto libraries, you need to add the loadlibraryhook library to AppInit_DLLs. More information about this is written in loadlibraryhook\ReadMe.txt
 
-Компилировать при помощи MS VS19
+Compile using MS VS19
+
+

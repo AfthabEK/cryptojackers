@@ -25,7 +25,7 @@ namespace CryptojackerFinder
         {
             StartButton.Visibility = Visibility.Hidden;
             StopButton.Visibility = Visibility.Visible;
-            StopButton.Content = "Анализ";
+            StopButton.Content = "Analysis";
             StopButton.IsEnabled = false;
             IsCanSetting = false;
 
@@ -35,7 +35,7 @@ namespace CryptojackerFinder
 
             if (Pretenders.Count == 0)
             {
-                MessageBox.Show("Не найдены процессы потребляющие CPU больше заданного");
+                MessageBox.Show("No processes found consuming more CPU than specified");
                 StartButton.Visibility = Visibility.Visible;
                 StopButton.Visibility = Visibility.Hidden;
                 IsCanSetting = true;
@@ -61,7 +61,7 @@ namespace CryptojackerFinder
                 CurrentTime = DateTime.Now - analyzer.Begin;
             };
             StopButton.IsEnabled = true;
-            StopButton.Content = "Стоп";
+            StopButton.Content = "Stop";
             var tasks = Pretenders.Select(async p =>
             {
                 var ts = new CancellationTokenSource();
