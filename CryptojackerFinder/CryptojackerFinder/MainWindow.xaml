@@ -19,12 +19,12 @@
                   IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding ProcessId, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="PID" />
-                <DataGridTextColumn Binding="{Binding ProcessName, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Имя процесса"/>
-                <DataGridTextColumn Binding="{Binding CpuUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="ЦП"/>
-                <DataGridTextColumn Binding="{Binding CpuStandardDeviation, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Среднеквадратичное отклонение ЦП"/>
-                <DataGridTextColumn Binding="{Binding RamUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Память"/>
-                <DataGridTextColumn Binding="{Binding NetUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Сеть"/>
-                <DataGridTextColumn Binding="{Binding CryptoApiCalls, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Доступ к CryptoAPI"/>
+                <DataGridTextColumn Binding="{Binding ProcessName, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Process name"/>
+                <DataGridTextColumn Binding="{Binding CpuUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="CPU"/>
+                <DataGridTextColumn Binding="{Binding CpuStandardDeviation, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="CPU Standard Deviation"/>
+                <DataGridTextColumn Binding="{Binding RamUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Memory"/>
+                <DataGridTextColumn Binding="{Binding NetUsageView, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Net"/>
+                <DataGridTextColumn Binding="{Binding CryptoApiCalls, UpdateSourceTrigger=PropertyChanged}" Width="auto" Header="Access to CryptoAPI"/>
             </DataGrid.Columns>
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
@@ -43,31 +43,31 @@
                 <TextBox Width="50"
                          IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
                          Text="{Binding ElementName=Main, Path=CpuUsage, UpdateSourceTrigger=PropertyChanged}"/>
-                <Label Width="250">Порог использования CPU (%)</Label>
+                <Label Width="250">Usage threshold CPU (%)</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
                 <TextBox Width="50"
                          IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
                          Text="{Binding ElementName=Main, Path=CpuStandardDeviation, UpdateSourceTrigger=PropertyChanged}"/>
-                <Label Width="250">Среднеквадратичное отклонение ЦП</Label>
+                <Label Width="250">CPU Standard Deviation</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
                 <TextBox Width="50"
                          IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
                          Text="{Binding ElementName=Main, Path=RamUsage, UpdateSourceTrigger=PropertyChanged}"/>
-                <Label Width="250">Потребление памяти (Mb)</Label>
+                <Label Width="250">Memory consumption (Mb)</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
                 <TextBox Width="50"
                          IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
                          Text="{Binding ElementName=Main, Path=NetUsage, UpdateSourceTrigger=PropertyChanged}"/>
-                <Label Width="250">Скорость передачи по сети (KBytes/minute)</Label>
+                <Label Width="250">Network transfer rate (KBytes/minute)</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
                 <TextBox Width="50" 
                          IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"
                          Text="{Binding ElementName=Main, Path=CryptoApiCalls, UpdateSourceTrigger=PropertyChanged}"/>
-                <Label Width="260">Количество обращений к CryptoApi в минуту</Label>
+                <Label Width="260">Number of calls to CryptoApi per minute</Label>
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Height="25" Margin="20">
