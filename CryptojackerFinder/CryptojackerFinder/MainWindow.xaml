@@ -71,7 +71,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Height="25" Margin="20">
-            <Label Content="Время анализа:"/>
+            <Label Content="Analysis time:"/>
             <TextBox Width="60" Text="{Binding ElementName=Main, Path=AnalyzeTime, StringFormat={}{0:hh':'mm':'ss},
                 UpdateSourceTrigger=PropertyChanged}"
                 IsEnabled="{Binding ElementName=Main, Path=IsCanSetting, UpdateSourceTrigger=PropertyChanged}"></TextBox>
