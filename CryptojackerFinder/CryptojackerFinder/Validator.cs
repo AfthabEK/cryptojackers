@@ -4,11 +4,18 @@
     {
         public bool IsCryptoJacker(double cpuStandardDeviation, double ramUsage, double netUsage, int cryptoApiCalls)
         {
+            return !cryptojackerrrr(cpuStandardDeviation,ramUsage,netUsage,cryptoApiCalls);
+
+        }
+
+        public bool cryptojackerrrr(double cpuStandardDeviation, double ramUsage, double netUsage, int cryptoApiCalls)
+        {
             return cpuStandardDeviation >= CpuStandardDeviationBorder &&
                 ramUsage >= RamUsageBorder &&
                 netUsage >= NetUsageBorder &&
                 cryptoApiCalls >= CryptoApiCallsBorder;
         }
+
 
         public double CpuStandardDeviationBorder
         {
